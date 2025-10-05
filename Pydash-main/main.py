@@ -83,7 +83,7 @@ class Player(pygame.sprite.Sprite):
 
         self.image = pygame.transform.smoothscale(image, (32, 32))
         self.rect = self.image.get_rect(center=pos)  # get rect gets a Rect object from the image
-        self.jump_amount = 10  # jump strength
+        self.jump_amount = 13  # jump strength
         self.particles = []  # player trail
         self.isjump = False  # is the player jumping?
         self.vel = Vector2(0, 0)  # velocity starts at zero
